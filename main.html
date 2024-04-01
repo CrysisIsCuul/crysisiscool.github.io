@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age Limits</title>
+
+    <script>
+      function Limit() {
+        let Age = document.querySelector("#age").value;
+        if (Age >= 21) {
+          alert("you can drink drive and smoke");
+        } else if (Age <= 20 && Age >= 16) {
+          alert("You can drive");
+        } else if (Age < 16) {
+          alert("you cant do nun rn lil bro");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <form onsubmit="Limit(); return false;">
+      <input id="age" type="text" />
+      <input type="submit" />
+    </form>
+  </body>
+</html>
